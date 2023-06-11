@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/txt_song_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No song playing"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+<LinearLayout
+    android:weightSum="3"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_previous"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:src="@drawable/baseline_fast_rewind_24"
+        app:tint="@color/white"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_play"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:src="@drawable/baseline_play_arrow_24"
+        app:tint="@color/white"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Play" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_pause"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Pause" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/baseline_fast_forward_24"
+        app:tint="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+</LinearLayout>
+</LinearLayout>
